@@ -1,0 +1,528 @@
+/* to reference class use. to reference id use pound */
+/* ---- reset ---- */
+
+body {
+  margin: 0;
+  font: normal 75% Arial, Helvetica, sans-serif;
+}
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+.sideMenu {
+  color: white;
+}
+.navigaiton {
+  position: relative;
+  font-size: 40px;
+  /* background-color: blue; */
+  color: white;
+  grid-row: 1/3;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.navigator {
+  /* background-color: red; */
+  padding-left: 15px;
+  position: relative;
+  top: 220px;
+  line-height: 1.8;
+  margin: 30px;
+}
+/* START OF WALLPAPER */
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #02092d;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13e8e9;
+  font-size: 0.8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles {
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+}
+
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
+/* END OF WALLPAPER */
+
+/* Homepage start */
+.content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#welcome {
+  margin: 30px;
+  color: white;
+  /* background-color: green; */
+  position: relative;
+  font-size: 80px;
+  text-align: center;
+  font-family: serif;
+  top: 20px;
+}
+
+.homeOptionContainer {
+  width: 65%;
+  display: flex;
+  color: white;
+  /* background-color: red; */
+  position: relative;
+  justify-content: space-between;
+  top: 80px;
+  margin: auto;
+}
+.specialLink {
+  color: white;
+  display: flex;
+  margin: auto;
+}
+#homeOptionContainerId {
+  width: 50%;
+}
+#homeOptionContainerId2 {
+  margin-top: 10px;
+}
+
+.homeOption {
+  position: relative;
+  margin: 30px;
+
+  font-family: monospace;
+  font-size: 30px;
+  /* background-color: yellow; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+#bio:hover {
+  color: #89cff0;
+  top: -10px;
+}
+#resumeOption:hover {
+  color: #89cff0;
+  top: -10px;
+}
+#certification:hover {
+  color: #89cff0;
+  top: -10px;
+}
+#experience:hover {
+  color: #89cff0;
+  top: -10px;
+}
+#award:hover {
+  color: #89cff0;
+  top: -10px;
+}
+#project:hover {
+  color: #89cff0;
+  top: -10px;
+}
+#contact:hover {
+  color: #89cff0;
+  top: -10px;
+}
+.sideMenu:hover {
+  color: #89cff0;
+}
+/* stuff in homepage end */
+
+/* stuff in bio start */
+
+#bioGridContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  color: white;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 20% 80%;
+  /* background-color: cyan; */
+  font-family: monospace;
+}
+.biopic {
+  float: right;
+}
+
+.bioHead {
+  font-weight: bold;
+  font-size: 130px;
+  position: relative;
+  /* background-color: red; */
+  color: #89cff0;
+
+  padding-top: 60px;
+}
+.bioBody {
+  position: relative;
+  /* background-color: yellow; */
+  font-size: 30px;
+  margin-top: -20px;
+  margin-right: 40px;
+  height: 85%;
+  padding-right: 8px;
+  overflow-y: scroll;
+  text-indent: 50px;
+}
+.resume {
+  color: white;
+  /* background-color: green; */
+  font-size: 30px;
+  display: flex;
+  width: 145px;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.downloadingImage {
+  margin-left: 10px;
+  margin-top: 3px;
+}
+/* stuff in biopage end */
+
+/* stuff in experience page start */
+#experienceGridContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  color: white;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 20% 80%;
+  /* background-color: cyan; */
+  font-family: monospace;
+}
+.experienceHead {
+  font-weight: bold;
+  font-size: 130px;
+  position: relative;
+  /* background-color: red; */
+  color: #89cff0;
+  display: flex;
+
+  padding-top: 60px;
+}
+.allInOrOut {
+  background-color: transparent;
+  color: white;
+  height: 140px;
+  width: 140px;
+  margin-top: 90px;
+  font-size: 30px;
+  /* border: 1px solid white; */
+}
+.allInOrOut:hover {
+  color: #89cff0;
+}
+#expandAll {
+  margin-left: auto;
+  margin-right: 20px;
+}
+#hideAll {
+  margin-right: 100px;
+}
+
+/*  <button id="expandAll" onClick="expandAll()" class="AllInOrOut">
+            Show All
+          </button>
+          <button id="hideAll" onClick="HideAll()" class="AllInOrOut">
+            Hide All
+          </button> */
+.experienceBody {
+  position: relative;
+  /* background-color: blue; */
+  font-size: 30px;
+  margin-top: 20px;
+  margin-right: 40px;
+  height: 85%;
+  padding-right: 8px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.experienceItem {
+  display: flex;
+  font-size: 50px;
+  /* background-color: red; */
+  margin: 8px;
+  display: flex;
+  height: 90px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  padding: 15px;
+  /* border: 1px solid white; */
+}
+.plusMinus {
+  margin-left: auto;
+  font-size: 60px;
+}
+.expandedBox {
+  /* background-color: green; */
+  color: white;
+  padding: 15px;
+  margin: 8px;
+}
+
+.experienceItem:hover {
+  border: 1px solid white;
+}
+
+/* stuff in experience page end */
+
+/* stuff in award page start */
+#awardGridContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  color: white;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 20% 80%;
+  /* background-color: cyan; */
+  font-family: monospace;
+}
+.awardHead {
+  font-weight: bold;
+  font-size: 130px;
+  position: relative;
+  /* background-color: red; */
+  color: #89cff0;
+
+  padding-top: 60px;
+}
+.awardBody {
+  position: relative;
+  /* background-color: yellow; */
+  font-size: 30px;
+  margin-top: 20px;
+  margin-right: 40px;
+  height: 85%;
+  padding-right: 8px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+.awardElement {
+  /* background-color: red; */
+  text-align: center;
+  display: flex;
+  font-size: 45px;
+  font-weight: bold;
+}
+.shiftAwardBullet {
+  margin-right: 7px;
+}
+.awardElementDescription {
+  margin-bottom: 45px;
+  margin-top: 20px;
+  padding: 18px;
+  /* background-color: red; */
+}
+/* stuff in award page end */
+/* stuff in project page end */
+#projectGridContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  color: white;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 20% 80%;
+  /* background-color: cyan; */
+  font-family: monospace;
+}
+.projectHead {
+  font-weight: bold;
+  font-size: 130px;
+  position: relative;
+  /* background-color: red; */
+  color: #89cff0;
+
+  padding-top: 60px;
+}
+.projectBody {
+  position: relative;
+  /* background-color: yellow; */
+  font-size: 30px;
+  margin-top: 20px;
+  margin-right: 40px;
+  height: 85%;
+  padding-right: 8px;
+  overflow-y: scroll;
+}
+
+.projectElement {
+  /* background-color: red; */
+  text-align: center;
+  display: flex;
+  font-size: 45px;
+  font-weight: bold;
+}
+.shiftprojectBullet {
+  margin-right: 13px;
+}
+.projectElementDescription {
+  margin-bottom: 45px;
+  margin-top: 20px;
+  padding: 18px;
+  /* background-color: red; */
+}
+
+/* stuff in project page end */
+/* stuff in contact page start */
+#contactGridContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  color: white;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 20% 80%;
+  /* background-color: cyan; */
+  font-family: monospace;
+}
+.contactHead {
+  font-weight: bold;
+  font-size: 130px;
+  position: relative;
+  /* background-color: red; */
+  color: #89cff0;
+
+  padding-top: 60px;
+}
+.contactBody {
+  position: relative;
+  /* background-color: yellow; */
+  font-size: 40px;
+  margin-top: 20px;
+  margin-right: 40px;
+  height: 85%;
+  padding-right: 8px;
+  overflow-y: scroll;
+}
+/* stuff in contact page end */
+/* stuff in certif page start */
+#certificationGridContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  color: white;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 20% 80%;
+  /* background-color: cyan; */
+  font-family: monospace;
+}
+.certificationHead {
+  font-weight: bold;
+  font-size: 130px;
+  position: relative;
+  /* background-color: red; */
+  color: #89cff0;
+
+  padding-top: 60px;
+}
+.certificationBody {
+  position: relative;
+  /* background-color: yellow; */
+  font-size: 30px;
+  margin-top: 20px;
+  margin-right: 40px;
+  height: 85%;
+  padding-right: 8px;
+  overflow-y: scroll;
+}
+.certificationElement {
+  /* background-color: red; */
+
+  display: flex;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+#shiftCertificationBulletId1 {
+  margin-top: 5px;
+}
+#shiftCertificationBulletId2 {
+  margin-top: 25px;
+}
+#shiftCertificationBulletId3 {
+  margin-top: 25px;
+}
+.shiftCertificationBullet {
+  margin-right: 12px;
+}
+.certificationElementDescription {
+  margin-bottom: 45px;
+  margin-top: 20px;
+  font-weight: normal;
+  padding: 18px;
+  /* background-color: green; */
+}
+/* stuff in certification page end */
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: "transparent";
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #89cff0;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #89cff0;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html>
+  <!-- start head -->
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Sijun's Website</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="particles.js"></script>
+    <script>
+      particlesJS.load("particles-js", "config.json", function () {
+        console.log("callback - particles.js config loaded");
+      });
+    </script>
+  </head>
+  <!-- end head -->
+
+  <!-- start body -->
+  <body>
+    <div id="particles-js">
+      <div id="contactGridContainer">
+        <div class="navigaiton">
+          <a href="index.html">
+            <div class="homeButton">
+              <img
+                src="websiteImages\back.png"
+                alt="ALT"
+                width="50"
+                height="50"
+              />
+            </div>
+          </a>
+          <div class="navigator">
+            <a href="biopage.html" style="text-decoration: none">
+              <div class="sideMenu">•About Me</div>
+            </a>
+            <a
+              href="resumeForWebsite.pdf"
+              download
+              style="text-decoration: none"
+            >
+              <div class="sideMenu">•Resume</div>
+            </a>
+            <a href="experiencepage.html" style="text-decoration: none">
+              <div class="sideMenu">•Experience</div>
+            </a>
+            <a href="awardpage.html" style="text-decoration: none">
+              <div class="sideMenu">•Award</div>
+            </a>
+            <a href="certificationpage.html" style="text-decoration: none">
+              <div class="sideMenu">•Certification</div>
+            </a>
+            <a href="projectpage.html" style="text-decoration: none">
+              <div class="sideMenu">•Project</div>
+            </a>
+            <a href="contactpage.html" style="text-decoration: none">
+              <div class="sideMenu">
+                <span style="color: #89cff0">•Contact</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contactHead">CONTACT</div>
+        <div class="contactBody" style="height: 900px">
+          <div class="contactBodyContainer">
+            <h style="font-size: 33px"
+              >If you have any questions about me please email me at <br />
+              junniekim12@gmail.com or use the contact form below!<br /><br />
+            </h>
+            <form action="https://formspree.io/f/xyyvyklv" method="POST">
+              <label style="color: white">
+                Name<br />
+                <input
+                  placeholder="Name"
+                  id="nameReset"
+                  type="text"
+                  name="name"
+                  style="
+                    color: white;
+                    width: 1500px;
+                    height: 60px;
+                    background-color: transparent;
+                    font-size: 30px;
+                    border: 2px solid #89cff0;
+                    border-radius: 15px;
+                    outline: none;
+                    text-indent: 10px;
+                  "
+                />
+              </label>
+              <br />
+              <label style="color: white">
+                Email<br />
+                <input
+                  placeholder="Email"
+                  id="emailReset"
+                  type="email"
+                  name="email"
+                  style="
+                    color: white;
+                    width: 1500px;
+                    height: 60px;
+                    font-size: 30px;
+                    background-color: transparent;
+                    border: 2px solid #89cff0;
+                    border-radius: 15px;
+                    outline: none;
+                    text-indent: 10px;
+                  "
+                />
+              </label>
+              <br />
+              <label style="color: white">
+                Message<br />
+                <textarea
+                  placeholder="Message"
+                  id="messageReset"
+                  name="message"
+                  style="
+                    resize: vertical;
+                    min-height: 200px;
+                    color: white;
+                    width: 1500px;
+                    height: 200px;
+                    font-size: 30px;
+                    background-color: transparent;
+                    border: 2px solid #89cff0;
+                    border-radius: 15px;
+                    outline: none;
+                    padding-top: 8px;
+                    padding-left: 10px;
+                  "
+                ></textarea>
+              </label>
+              <br />
+              <!-- your other form fields go here -->
+              <button
+                type="submit"
+                style="
+                  margin-top: 10px;
+                  margin-left: 1390px;
+                  color: #89cff0;
+                  width: 120px;
+                  height: 80px;
+                  font-size: 35px;
+                  background-color: transparent;
+                  border: 2px solid #89cff0;
+                  border-radius: 15px;
+                "
+              >
+                Send
+              </button>
+            </form>
+            <!-- <div class="extraContact">put linkedin and github</div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- end body -->
+</html>
+-

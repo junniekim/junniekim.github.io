@@ -1,0 +1,15 @@
+Index images
+Bio:
+Award:
+Resume:
+Experience:
+Project:
+Certification:
+Contact:
+Back Arrow:
+<div> Icons made by <a href="https://www.flaticon.com/authors/ilham-fitrotul-hayat" title="Ilham Fitrotul Hayat"> Ilham Fitrotul Hayat </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>
+
+Bulletpoint
+Award:
+project:
+certification:

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html>
+  <!-- start head -->
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Sijun's Website</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="particles.js"></script>
+    <script>
+      particlesJS.load("particles-js", "config.json", function () {
+        console.log("callback - particles.js config loaded");
+      });
+    </script>
+  </head>
+  <!-- end head -->
+
+  <!-- start body -->
+  <body>
+    <div id="particles-js">
+      <div id="experienceGridContainer">
+        <div class="navigaiton">
+          <a href="index.html">
+            <div class="homeButton">
+              <img
+                src="websiteImages\back.png"
+                alt="ALT"
+                width="50"
+                height="50"
+              />
+            </div>
+          </a>
+          <div class="navigator">
+            <a href="biopage.html" style="text-decoration: none">
+              <div class="sideMenu">•About Me</div>
+            </a>
+            <a
+              href="resumeForWebsite.pdf"
+              download
+              style="text-decoration: none"
+            >
+              <div class="sideMenu">•Resume</div>
+            </a>
+            <a href="experiencepage.html" style="text-decoration: none">
+              <div class="sideMenu">
+                <span style="color: #89cff0">•Experience</span>
+              </div>
+            </a>
+            <a href="awardpage.html" style="text-decoration: none">
+              <div class="sideMenu">•Award</div>
+            </a>
+            <a href="certificationpage.html" style="text-decoration: none">
+              <div class="sideMenu">•Certification</div>
+            </a>
+            <a href="projectpage.html" style="text-decoration: none">
+              <div class="sideMenu">•Project</div>
+            </a>
+            <a href="contactpage.html" style="text-decoration: none">
+              <div class="sideMenu">•Contact</div>
+            </a>
+          </div>
+        </div>
+        <div class="experienceHead">
+          <h>EXPERIENCE</h>
+          <button id="expandAll" onClick="expandAll()" class="allInOrOut">
+            Show All
+          </button>
+          <button id="hideAll" onClick="hideAll()" class="allInOrOut">
+            Hide All
+          </button>
+        </div>
+        <div class="experienceBody">
+          <button
+            id="experienceItem4"
+            onClick="showDescription(4)"
+            class="experienceItem off"
+          >
+            <h>Junior Full-Stack Developer</h>
+            <div id="sign4" class="plusMinus">
+              <h>+</h>
+            </div>
+          </button>
+          <div
+            class="expandedBox"
+            id="descriptionBox4"
+            style="display: none; line-height: 1.2"
+          >
+            <body4>
+              I have been working as a junior full-stack developer at Sitek
+              Solutions in Lexington, KY. I mainly work on front-end
+              development, where I receive backend data from my coworkers, and I
+              construct the user interface so the customers can utilize the
+              website. I developed a strong understanding of Angular,
+              javascript, and HTML/CSS from this position. I also had some
+              opportunities to learn the backend development processes using C#
+              and SQL Server Management Studio. I also got familiar with using
+              Github and collaborating in a team setting.
+            </body4>
+          </div>
+
+          <button
+            id="experienceItem2"
+            onClick="showDescription(2)"
+            class="experienceItem off"
+          >
+            <h>Computer Science Teaching Assistant</h>
+            <div id="sign2" class="plusMinus">
+              <h>+</h>
+            </div>
+          </button>
+          <div
+            class="expandedBox"
+            id="descriptionBox2"
+            style="display: none; line-height: 1.2"
+          >
+            <div
+              class="Tutoringpic"
+              style="display: flex; justify-content: center"
+            >
+              <img
+                src="websiteImages\Tutoring.PNG"
+                alt="ALT"
+                width="1000"
+                height="700"
+              />
+            </div>
+            <br />
+            <body2>
+              At Eastern Kentucky University, I had a chance to work as a
+              teaching assistant for CSC 195. It is an intro class for discrete
+              structures, which is a core computer science class for freshmen. I
+              led more than 40 students to successfully finish the course. My
+              duties include designing labs, grading labs and homework, and
+              tutoring students on an individual basis. I was able to
+              review/retain my knowledge on this topic throughout this
+              experience, and I enhanced my communication skills by constantly
+              teaching/tutoring students.
+            </body2>
+          </div>
+
+          <button
+            id="experienceItem3"
+            onClick="showDescription(3)"
+            class="experienceItem off"
+          >
+            <h>Computer Science Tutor</h>
+            <div id="sign3" class="plusMinus">
+              <h>+</h>
+            </div>
+          </button>
+          <div
+            class="expandedBox"
+            id="descriptionBox3"
+            style="display: none; line-height: 1.2"
+          >
+            <div style="display: flex; justify-content: center">
+              <img
+                src="websiteImages\TA.PNG"
+                alt="ALT"
+                width="1000"
+                height="700"
+              />
+            </div>
+            <br />
+            <body3>
+              At Eastern Kentucky University, I also worked as a tutor at
+              Computer Science Informational Technology Tutoring Center. I
+              offered tutoring for all computer science classes I have taken.
+              The classes that I tutored most commonly were Java programming and
+              database classes. This was a very rewarding job as I was getting
+              lots of positive feedback from students that their grades have
+              gone up dramatically after coming to my tutoring.
+            </body3>
+          </div>
+          <button
+            id="experienceItem5"
+            onClick="showDescription(5)"
+            class="experienceItem off"
+          >
+            <h>Lead Guru</h>
+            <div id="sign5" class="plusMinus">
+              <h>+</h>
+            </div>
+          </button>
+          <div
+            class="expandedBox"
+            id="descriptionBox5"
+            style="display: none; line-height: 1.2"
+          >
+            <div style="display: flex; justify-content: center">
+              <img
+                src="websiteImages\SSC.JPG"
+                alt="ALT"
+                width="1100"
+                height="700"
+              />
+            </div>
+            <br />
+            <body5>
+              Working at the Student Success Center at Eastern Kentucky
+              University was such a valuable experience. I acquired so many
+              priceless skills through this job. My duties included providing
+              tutoring for not only computer science, but also all classes that
+              I have taken. I was also assigned some students who were not doing
+              well, and I provided them with weekly mentoring throughout a
+              semester; I have brought up my mentee's GPA and overall
+              performance by a significant amount. I also led a workshop not
+              only for students but also for my coworkers. Each workshop had
+              about 5-20 attendees. On top of that, I was responsible for
+              logging/changing/reporting my coworkers' shift coverage and course
+              coverage using Excel. This job gave me good leadership skills,
+              communication skills, and Excel skills.
+            </body5>
+          </div>
+
+          <button
+            id="experienceItem1"
+            onClick="showDescription(1)"
+            class="experienceItem off"
+          >
+            <h>Research Associate for Center for STEM Excellence</h>
+            <div id="sign1" class="plusMinus">
+              <h>+</h>
+            </div>
+          </button>
+          <div
+            class="expandedBox"
+            id="descriptionBox1"
+            style="display: none; line-height: 1.2"
+          >
+            <body>
+              At the center for STEM excellence at Eastern Kentucky University,
+              I had a chance to work as a student researcher. I collaborated
+              with computer science students as well as physics students to
+              assist research for a physics professor. My main responsibility
+              was to provide the team communication between FPGAs (Field
+              Programmable Gate Arrays) and the computers.
+            </body>
+          </div>
+
+          <button
+            id="experienceItem6"
+            onClick="showDescription(6)"
+            class="experienceItem off"
+          >
+            <h>Alumni Engagement Student Liason</h>
+            <div id="sign6" class="plusMinus">
+              <h>+</h>
+            </div>
+          </button>
+          <div
+            class="expandedBox"
+            id="descriptionBox6"
+            style="display: none; line-height: 1.2"
+          >
+            <div style="display: flex; justify-content: center">
+              <img
+                src="websiteImages\Alum.JPG"
+                alt="ALT"
+                width="1100"
+                height="700"
+              />
+            </div>
+            <br />
+            <body6>
+              I had an opportunity to work with a wonderful team at
+              International Alumni Association at Eastern Kentucky University.
+              My duties include managing/updating web content on the Alumni
+              websites, such as changing dates for alumni events like the
+              Homecoming game. I also managed the EKU alumni database by
+              updating and retrieving requested information for the alumni.
+              Sometimes I would go to the event scene and assist in setting up
+              the events, cameras, and welcoming people The picture above was
+              taken at the Cincinnati Zoo.
+            </body6>
+          </div>
+          <button
+            id="experienceItem7"
+            onClick="showDescription(7)"
+            class="experienceItem off"
+          >
+            <h>Educational Technology Assistant </h>
+            <div id="sign7" class="plusMinus">
+              <h>+</h>
+            </div>
+          </button>
+          <div
+            class="expandedBox"
+            id="descriptionBox7"
+            style="display: none; line-height: 1.2"
+          >
+            <body7>
+              This position was an extension of the Lead Guru Position. I was
+              embedded into a summer program that is designed to help those who
+              want to get a head-start on their freshman year. My duty was to
+              ensure that those students have the necessary software installed
+              on their computer, and ensure that students know how to navigate
+              the educational technologies such as Blackboard.
+            </body7>
+          </div>
+          <button
+            id="experienceItem8"
+            onClick="showDescription(8)"
+            class="experienceItem off"
+          >
+            <h>Informational Technology Geek</h>
+            <div id="sign8" class="plusMinus">
+              <h>+</h>
+            </div>
+          </button>
+          <div
+            class="expandedBox"
+            id="descriptionBox8"
+            style="display: none; line-height: 1.2"
+          >
+            <body8>
+              The first on-campus job I had at Eastern Kentucky University is
+              EKU IT Geek. This is the place I learned customer service skills,
+              communication skills, and the ability to work in a team setting. I
+              had quite a few duties for this job, and I acquired a lot of good
+              skills from the duties. For example, my duties included renting
+              electronic devices, software troubleshooting, networking
+              troubleshooting, hardware troubleshooting, and taking professional
+              portrait pictures. I learned so many different hardwar&software
+              skills from this experience, but the most important thing I
+              learned from this position is being responsible for the job I have
+              and being professional as it was my first job ever.
+            </body8>
+          </div>
+        </div>
+      </div>
+      <script src="onclick.js"></script>
+    </div>
+  </body>
+  <!-- end body -->
+</html>
+-
